@@ -31,11 +31,14 @@
   .wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem;}
 
   .top{background:var(--red);color:#fff;padding:2.4rem 0 2.6rem;}
+  .topgrid{display:grid;gap:1.6rem;align-items:center;}
+  @media(min-width:42rem){.topgrid{grid-template-columns:1.35fr 1fr;gap:2.2rem;}}
   .top .who{font-family:var(--disp);font-weight:700;font-size:1.05rem;letter-spacing:.16em;
         text-transform:uppercase;margin-bottom:1.1rem;}
-  .top h1{font-family:var(--disp);font-weight:900;font-size:clamp(3.4rem,17vw,7rem);line-height:.82;
+  .top h1{font-family:var(--disp);font-weight:900;font-size:clamp(3.4rem,15vw,6rem);line-height:.95;
         letter-spacing:-.01em;text-transform:uppercase;margin:0 0 1.1rem;}
   .top p{font-size:1.05rem;max-width:26rem;margin:0;}
+  .portrait img{width:100%;height:auto;border:4px solid #fff;}
 
   .act{display:block;width:100%;text-align:left;font:inherit;color:inherit;border:0;cursor:pointer;
         padding:0;background:transparent;border-bottom:3px solid var(--black);}
@@ -103,9 +106,16 @@
 
 <div class="top">
   <div class="wrap">
-    <div class="who">Nancy Gutierrez &middot; Arizona House, LD18</div>
-    <h1>Three things.<br>Two minutes.</h1>
-    <p>Do them in this order. The first one matters most and almost nobody does it.</p>
+    <div class="topgrid">
+      <div>
+        <div class="who">Nancy Gutierrez &middot; Arizona House, LD18</div>
+        <h1>Three things.<br>Two minutes.</h1>
+        <p>The first one takes thirty seconds and it is the one most people skip.</p>
+      </div>
+      <div class="portrait">
+        <img src="https://images.squarespace-cdn.com/content/v1/6175ca8edd63325741c738bb/6de8c5b6-c574-4177-b01f-799e06afb0ca/_MG_9331.png?format=1500w" alt="Nancy Gutierrez">
+      </div>
+    </div>
   </div>
 </div>
 
@@ -149,7 +159,7 @@
   <p>Almost nobody in that building has seen the inside of a classroom this decade. She was in one last year.</p>
 
   <ul class="facts">
-    <li><span class="b">Leads</span><span class="t">Assistant Minority Leader, Arizona House of Representatives</span></li>
+    <li><span class="b">Leads</span><span class="t">Assistant Minority Leader, the number two Democrat in the Arizona House</span></li>
     <li><span class="b">Sits</span><span class="t">Ranking Member on Education, and on Appropriations</span></li>
     <li><span class="b">Passed</span><span class="t">Arizona ovarian cancer awareness license plate, signed into law</span></li>
     <li><span class="b">Filed</span><span class="t">Repeal of the state preemption blocking local firearm rules</span></li>
@@ -158,7 +168,7 @@
 
 <div class="backed">
   <div class="wrap">
-    <div class="lbl">Backed by</div>
+    <div class="lbl">Nancy is proud to be endorsed by</div>
     <ul>
       <li>Arizona Education Association</li>
       <li>Planned Parenthood Advocates of Arizona</li>
@@ -190,7 +200,7 @@
       <button onclick="window.open('https://go.azsos.gov/4j9j','_blank','noopener')">Nomination petition</button>
     </div>
     <p class="disclaim">
-      This is an unofficial design concept built by George Polisner. It is not affiliated with, authorized by, or paid for by Nancy Gutierrez, any campaign, or any committee. All quoted positions are Nancy&rsquo;s own published words. Nothing here has been invented.
+      This is an unofficial design concept built by George Polisner. It is not affiliated with, authorized by, or paid for by Nancy Gutierrez, any campaign, or any committee. Photographs are from nancyforaz.com and remain the property of their photographers, credited there as Aiden Hamilton and Luis Gonzalez. All quoted positions are Nancy&rsquo;s own published words. Nothing here has been invented.
     </p>
   </div>
 </footer>
