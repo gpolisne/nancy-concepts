@@ -14,9 +14,10 @@
     --night-2:#1D242A;
     --page:#F2F1ED;
     --ink:#191F24;
-    --soft:#66707A;
+    --soft:#4C565F;
     --line:#DAD8D0;
     --red:#C8382F;
+    --red-lt:#E8564C;
     --enacted:#2F6B4F;
     --intro:#9A6B18;
     --slate:#4A5866;
@@ -39,29 +40,29 @@
   .navin{max-width:64rem;margin:0 auto;padding:.8rem 1.5rem;display:flex;align-items:center;gap:1.3rem;flex-wrap:wrap;}
   .navin .nm{font-family:var(--disp);font-weight:800;font-size:.95rem;letter-spacing:.03em;
         text-transform:uppercase;color:#fff;margin-right:auto;}
-  nav button{background:none;border:0;font-family:var(--disp);font-size:.85rem;font-weight:500;
-        color:#B9C2CA;cursor:pointer;padding:.2rem 0;}
+  nav button{background:none;border:0;font-family:var(--disp);font-size:.9rem;font-weight:500;
+        color:#C3CBD2;cursor:pointer;padding:.2rem 0;}
   nav button:hover{color:#fff;}
   nav button.give{background:var(--red);color:#fff;padding:.45rem 1rem;border-radius:2px;font-weight:700;}
 
-  .hero{background:var(--night);color:#fff;padding:4.5rem 0 4rem;}
-  .kicker{font-family:var(--disp);font-size:11.5px;font-weight:600;letter-spacing:.16em;
-        text-transform:uppercase;color:var(--red);margin-bottom:1.6rem;}
-  .hero h1{font-family:var(--disp);font-weight:800;font-size:clamp(3rem,12vw,7rem);line-height:.9;
-        letter-spacing:-.035em;margin:0 0 1.6rem;text-transform:uppercase;}
-  .hero .sub{font-family:var(--body);font-size:clamp(1.1rem,2.6vw,1.45rem);line-height:1.45;
-        max-width:32rem;color:#CBD3DA;margin:0 0 2rem;}
+  .hero{background:var(--night);color:#fff;padding:3.6rem 0 3.4rem;}
+  .kicker{font-family:var(--disp);font-size:14px;font-weight:700;letter-spacing:.1em;
+        text-transform:uppercase;color:var(--red-lt);margin-bottom:1.3rem;}
+  .hero h1{font-family:var(--disp);font-weight:800;font-size:clamp(2.1rem,6.5vw,3.9rem);line-height:1.02;
+        letter-spacing:-.022em;margin:0 0 1.4rem;}
+  .hero .sub{font-family:var(--body);font-size:clamp(1.02rem,2.3vw,1.22rem);line-height:1.55;
+        max-width:34rem;color:#CBD3DA;margin:0 0 1.9rem;}
   .hero .sub b{color:#fff;font-weight:600;}
-  .signoff{font-family:var(--disp);font-weight:600;font-size:1rem;letter-spacing:.14em;
-        text-transform:uppercase;border-top:2px solid var(--red);display:inline-block;padding-top:.7rem;margin-bottom:2.2rem;}
+  .signoff{font-family:var(--disp);font-weight:700;font-size:1rem;letter-spacing:.13em;
+        text-transform:uppercase;border-top:2px solid var(--red);display:inline-block;padding-top:.7rem;margin-bottom:2rem;}
   .asks{display:flex;gap:.6rem;flex-wrap:wrap;}
-  .asks button{font-family:var(--disp);font-weight:700;font-size:.9rem;padding:.7rem 1.3rem;
+  .asks button{font-family:var(--disp);font-weight:700;font-size:.92rem;padding:.7rem 1.3rem;
         border-radius:2px;cursor:pointer;border:1.5px solid #4A555E;background:transparent;color:#fff;}
   .asks button.primary{background:var(--red);border-color:var(--red);}
   .asks button:hover{background:#fff;color:var(--night);border-color:#fff;}
 
   section{padding:4.5rem 0;}
-  .sechead{font-family:var(--disp);font-size:11.5px;font-weight:600;letter-spacing:.16em;
+  .sechead{font-family:var(--disp);font-size:14px;font-weight:700;letter-spacing:.1em;
         text-transform:uppercase;color:var(--soft);margin:0 0 1rem;}
   h2{font-family:var(--disp);font-weight:700;font-size:clamp(1.7rem,4.5vw,2.6rem);line-height:1.08;
         letter-spacing:-.02em;margin:0 0 1.6rem;}
@@ -69,8 +70,8 @@
   .docket{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink);}
   .docket li{border-bottom:1px solid var(--line);padding:1.5rem 0;display:grid;gap:.5rem 2rem;}
   @media(min-width:46rem){.docket li{grid-template-columns:11rem 1fr;align-items:start;}}
-  .chip{font-family:var(--disp);font-size:10.5px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;
-        color:#fff;padding:.28rem .6rem;border-radius:2px;display:inline-block;}
+  .chip{font-family:var(--disp);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+        color:#fff;padding:.3rem .65rem;border-radius:2px;display:inline-block;}
   .chip.enacted{background:var(--enacted);}
   .chip.intro{background:var(--intro);}
   .chip.lead{background:var(--red);}
@@ -87,7 +88,7 @@
   .bio{display:grid;gap:2.5rem;align-items:start;}
   @media(min-width:52rem){.bio{grid-template-columns:1fr 1.2fr;gap:3.5rem;}}
   .bio img{width:100%;max-height:30rem;object-fit:cover;}
-  .bio figcaption{font-family:var(--disp);font-size:.78rem;color:var(--soft);margin-top:.5rem;}
+  .bio figcaption{font-family:var(--disp);font-size:.82rem;color:var(--soft);margin-top:.5rem;}
   .bio p{margin:0 0 .9rem;}
 
   .endorse{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--line);}
@@ -99,7 +100,7 @@
   .vote h2{color:#fff;}
   .vote p{max-width:33rem;color:#CBD3DA;}
   .vote .row{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.7rem;}
-  .vote button{font-family:var(--disp);font-weight:700;font-size:.9rem;padding:.7rem 1.3rem;
+  .vote button{font-family:var(--disp);font-weight:700;font-size:.92rem;padding:.7rem 1.3rem;
         border:1.5px solid #4A555E;background:transparent;color:#fff;border-radius:2px;cursor:pointer;}
   .vote button.primary{background:var(--red);border-color:var(--red);}
   .vote button:hover{background:#fff;color:var(--night);border-color:#fff;}
@@ -110,10 +111,10 @@
   @media(min-width:44rem){.fcols{grid-template-columns:1fr 1fr;}}
   footer p{margin:0 0 .4rem;font-size:.98rem;}
   .social{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1rem;}
-  .social button{font-family:var(--disp);font-size:.82rem;font-weight:500;padding:.4rem .8rem;
-        border:1px solid #38424A;background:transparent;color:#B9C2CA;border-radius:2px;cursor:pointer;}
+  .social button{font-family:var(--disp);font-size:.86rem;font-weight:500;padding:.4rem .8rem;
+        border:1px solid #38424A;background:transparent;color:#C3CBD2;border-radius:2px;cursor:pointer;}
   .social button:hover{background:#38424A;color:#fff;}
-  .disclaim{border-top:1px solid #2A3238;margin-top:2.5rem;padding-top:1.5rem;font-size:.8rem;line-height:1.7;color:#7C868F;}
+  .disclaim{border-top:1px solid #2A3238;margin-top:2.5rem;padding-top:1.5rem;font-size:.8rem;line-height:1.7;color:#8B949C;}
 
   button:focus-visible{outline:2px solid var(--red);outline-offset:3px;}
   .hero button:focus-visible,.vote button:focus-visible,footer button:focus-visible,nav button:focus-visible{outline-color:#fff;}
@@ -140,9 +141,9 @@
 
 <div class="hero">
   <div class="wrap">
-    <div class="kicker">Re-elect &middot; Arizona House, District 18</div>
-    <h1>Assistant<br>Minority<br>Leader.</h1>
-    <p class="sub">Ranking Member on Education. Appropriations Committee. <b>And still teaching.</b></p>
+    <div class="kicker">Re-elect &middot; Arizona House &middot; Legislative District 18</div>
+    <h1>Leading for LD18.<br>Still in the classroom.</h1>
+    <p class="sub"><b>Assistant Minority Leader</b> &mdash; the number two Democrat in the Arizona House. Ranking Member on Education. On the Appropriations Committee. And she taught at Tucson High through last school year.</p>
     <div class="signoff">Nancy Gutierrez</div>
     <div class="asks">
       <button class="primary" onclick="window.open('https://secure.actblue.com/donate/nancyforaz24','_blank','noopener')">Donate</button>
@@ -154,13 +155,13 @@
 
 <section class="wrap" id="record">
   <p class="sechead">Since 2022</p>
-  <h2 class="narrow">What the seat has actually produced.</h2>
+  <h2 class="narrow">Rep. Nancy Gutierrez has delivered:</h2>
   <ul class="docket">
     <li>
       <div><span class="chip lead">Leadership</span></div>
       <div>
         <div class="what">Assistant Minority Leader, Arizona House of Representatives</div>
-        <p class="note">Elected to the House in 2022. Ranking Member on Education and a member of the Appropriations Committee, the two rooms where school funding is actually decided.</p>
+        <p class="note">Elected to the House in 2022 and chosen by her colleagues as second in command of the Democratic caucus. Ranking Member on Education and a member of Appropriations, the two rooms where school funding is actually decided.</p>
       </div>
     </li>
     <li>
@@ -220,7 +221,7 @@
   <div class="bio">
     <figure style="margin:0;">
       <img src="https://images.squarespace-cdn.com/content/v1/6175ca8edd63325741c738bb/6bbe107e-88aa-4111-9a89-be5c98d00ecb/IMG_2238.jpeg?format=1500w" alt="Tucson High students doing restorative yoga in Nancy Gutierrez's classroom">
-      <figcaption>Tucson High students doing restorative yoga in her classroom.</figcaption>
+      <figcaption>Tucson High students in her classroom. Placeholder &mdash; a photo of a regular class would be stronger here.</figcaption>
     </figure>
     <div>
       <p>Nancy attended Arizona public schools from kindergarten through college at NAU, where she earned a degree in elementary education with an emphasis in math. She has held an Arizona teaching credential since 1994 and taught in Paradise Valley, Sierra Vista, and at Tucson High from 2013 to 2025.</p>
@@ -251,7 +252,7 @@
 
 <div class="vote" id="vote">
   <div class="wrap">
-    <p class="sechead" style="color:#8C97A1;">Before anything else</p>
+    <p class="sechead" style="color:#9AA5AE;">Before anything else</p>
     <h2>Make sure you can vote.</h2>
     <p>Registrations get cancelled for reasons that have nothing to do with you. Checking takes about thirty seconds and it is the most useful thing you can do today.</p>
     <div class="row">
@@ -278,7 +279,7 @@
         </div>
       </div>
       <div>
-        <p class="sechead" style="color:#7C868F;">News from the House</p>
+        <p class="sechead" style="color:#8B949C;">News from the House</p>
         <p style="margin-bottom:1rem;">Nancy sends a newsletter from the Legislature covering what is moving, what is stuck, and what it means for Tucson.</p>
         <div class="social">
           <button onclick="window.open('https://mailchi.mp/a193ce05c8b5/votingbeginssoon','_blank','noopener')">Read the latest</button>
