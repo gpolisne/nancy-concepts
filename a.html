@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Concept A: The Classroom — Nancy Gutierrez</title>
+<title>Nancy Gutierrez &mdash; Arizona House, Legislative District 18</title>
+<meta name="description" content="Rep. Nancy Gutierrez, Assistant Minority Leader in the Arizona House, representing Legislative District 18. Thirty years in Arizona classrooms.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
@@ -24,10 +25,13 @@
   body{margin:0;background:var(--chalk);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;}
   img{display:block;max-width:100%;}
 
+  .skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--chalk);
+        padding:.7rem 1.2rem;z-index:50;font-weight:700;text-decoration:none;}
+  .skip:focus{left:0;}
+
   .flag{background:var(--ink);color:var(--chalk);font-family:var(--body);font-size:11px;font-weight:500;
         letter-spacing:.1em;text-transform:uppercase;padding:.6rem 1rem;text-align:center;}
-  .flag button{background:none;border:0;color:var(--chalk);font:inherit;text-decoration:underline;
-        cursor:pointer;padding:0;margin-left:.5rem;}
+  .flag a{color:var(--chalk);text-decoration:underline;text-underline-offset:2px;margin-left:.5rem;}
 
   .wrap{max-width:66rem;margin:0 auto;padding:0 1.5rem;}
   .narrow{max-width:40rem;}
@@ -35,10 +39,12 @@
   nav{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--chalk);z-index:20;}
   .navin{max-width:66rem;margin:0 auto;padding:.85rem 1.5rem;display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap;}
   .wordmark{font-family:var(--display);font-size:1.35rem;font-weight:600;margin-right:auto;letter-spacing:-.01em;}
+  .wordmark a{color:inherit;text-decoration:none;}
   .wordmark span{color:var(--red);}
-  nav button{background:none;border:0;font:inherit;font-size:.95rem;color:var(--ink);cursor:pointer;padding:.2rem 0;}
-  nav button:hover{color:var(--red);}
-  nav button.give{background:var(--red);color:#fff;padding:.45rem 1rem;border-radius:2px;font-weight:700;}
+  nav a{font-size:.95rem;color:var(--ink);text-decoration:none;padding:.2rem 0;}
+  nav a:hover{color:var(--red);}
+  nav a.give{background:var(--red);color:#fff;padding:.45rem 1rem;border-radius:2px;font-weight:700;}
+  nav a.give:hover{background:var(--board);color:#fff;}
 
   .hero{padding:4rem 0 3.5rem;border-bottom:1px solid var(--line);}
   .eyebrow{font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);}
@@ -47,13 +53,12 @@
   .hero .msg{font-family:var(--display);font-style:italic;font-size:clamp(1.3rem,3.4vw,2rem);
         color:var(--red);line-height:1.25;margin:0 0 1.8rem;max-width:30rem;}
   .asks{display:flex;gap:.6rem;flex-wrap:wrap;}
-  .asks button{font:inherit;font-weight:700;font-size:.95rem;padding:.7rem 1.3rem;border-radius:2px;cursor:pointer;
-        border:1.5px solid var(--ink);background:transparent;color:var(--ink);}
-  .asks button.primary{background:var(--red);border-color:var(--red);color:#fff;}
-  .asks button:hover{background:var(--ink);color:var(--chalk);}
-  .asks button.primary:hover{background:var(--board);border-color:var(--board);}
+  .asks a{display:inline-block;font-weight:700;font-size:.95rem;padding:.7rem 1.3rem;border-radius:2px;
+        border:1.5px solid var(--ink);background:transparent;color:var(--ink);text-decoration:none;}
+  .asks a.primary{background:var(--red);border-color:var(--red);color:#fff;}
+  .asks a:hover{background:var(--ink);color:var(--chalk);}
+  .asks a.primary:hover{background:var(--board);border-color:var(--board);}
 
-  section{padding:4rem 0;}
   .sechead{font-size:16px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#333B36;
         margin:0 0 1.2rem;}
   h2{font-family:var(--display);font-weight:400;font-size:clamp(1.8rem,4.5vw,2.7rem);line-height:1.1;
@@ -77,9 +82,8 @@
   .record .when{font-size:.85rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--red);padding-top:.25rem;}
   .record .what{font-family:var(--display);font-size:1.2rem;line-height:1.3;}
   .record .note{font-size:.98rem;color:var(--soft);margin-top:.25rem;}
-  .src{background:none;border:0;font:inherit;font-size:.9rem;font-weight:700;color:var(--red);
-        text-decoration:underline;text-underline-offset:2px;cursor:pointer;padding:0;margin-top:.5rem;
-        display:inline-block;text-align:left;}
+  .src{font-size:.9rem;font-weight:700;color:var(--red);text-decoration:underline;text-underline-offset:2px;
+        margin-top:.5rem;display:inline-block;}
   .src:hover{color:var(--ink);}
 
   .honors{margin-top:3.2rem;display:grid;gap:1.8rem;}
@@ -87,7 +91,7 @@
   .honor .what{font-family:var(--display);font-size:1.1rem;line-height:1.3;margin-bottom:.35rem;}
   .honor .note{font-size:.93rem;color:var(--soft);line-height:1.55;}
   .rule{border:0;border-top:1px solid var(--line);margin:3.5rem 0 0;}
-  section.wrap{padding-top:4rem;padding-bottom:4rem;}
+  section.wrap{padding-top:4rem;padding-bottom:4rem;scroll-margin-top:5rem;}
 
   .issues{display:grid;gap:2.5rem;}
   @media(min-width:52rem){.issues{grid-template-columns:1fr 1fr;gap:3rem 3.5rem;}}
@@ -100,57 +104,63 @@
   .endorse li{break-inside:avoid;font-family:var(--display);font-size:1.05rem;line-height:1.35;
         padding:.55rem 0;border-bottom:1px solid var(--line);}
 
-  .vote{background:var(--red);color:#fff;padding:4rem 0;}
+  .vote{background:var(--red);color:#fff;padding:4rem 0;scroll-margin-top:5rem;}
   .vote h2{color:#fff;}
   .vote p{max-width:34rem;}
   .vote .row{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.6rem;}
-  .vote button{font:inherit;font-weight:700;font-size:.95rem;padding:.7rem 1.3rem;border:1.5px solid #fff;
-        background:transparent;color:#fff;border-radius:2px;cursor:pointer;}
-  .vote button:hover{background:#fff;color:var(--red);}
+  .vote a{display:inline-block;font-weight:700;font-size:.95rem;padding:.7rem 1.3rem;border:1.5px solid #fff;
+        background:transparent;color:#fff;border-radius:2px;text-decoration:none;}
+  .vote a:hover{background:#fff;color:var(--red);}
 
   footer{background:var(--board);color:var(--chalk);padding:3.5rem 0 4rem;}
   footer h2{color:var(--chalk);}
   .fcols{display:grid;gap:2rem;}
   @media(min-width:44rem){.fcols{grid-template-columns:1fr 1fr;}}
   footer p{margin:0 0 .4rem;font-size:.97rem;}
-  footer .social{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem;}
-  footer .social button{font:inherit;font-size:.88rem;font-weight:500;padding:.4rem .8rem;border:1px solid #46574F;
-        background:transparent;color:var(--chalk);border-radius:2px;cursor:pointer;}
-  footer .social button:hover{background:#46574F;}
+  footer a{color:var(--chalk);}
+  .social{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem;}
+  .social a{display:inline-block;font-size:.88rem;font-weight:500;padding:.4rem .8rem;border:1px solid #46574F;
+        background:transparent;color:var(--chalk);border-radius:2px;text-decoration:none;}
+  .social a:hover{background:#46574F;}
   .disclaim{border-top:1px solid #35463E;margin-top:2.5rem;padding-top:1.5rem;font-size:.82rem;line-height:1.7;color:#A9B6AF;}
+  .disclaim a{color:#A9B6AF;}
 
-  button:focus-visible{outline:2px solid var(--red);outline-offset:3px;}
-  .vote button:focus-visible,footer button:focus-visible{outline-color:#fff;}
+  a:focus-visible{outline:2px solid var(--red);outline-offset:3px;}
+  .vote a:focus-visible,footer a:focus-visible,.flag a:focus-visible{outline-color:#fff;}
   @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}*{transition:none!important;}}
 </style>
 </head>
 <body>
 
+<a class="skip" href="#main">Skip to content</a>
+
 <div class="flag">
   Unofficial concept, not affiliated with the campaign
-  <button onclick="location.href='index.html'">All three directions</button>
+  <a href="concepts.html">All three directions</a>
 </div>
 
-<nav>
+<nav aria-label="Main">
   <div class="navin">
-    <div class="wordmark">Nancy <span>Gutierrez</span></div>
-    <button onclick="document.getElementById('record').scrollIntoView()">Record</button>
-    <button onclick="document.getElementById('issues').scrollIntoView()">Issues</button>
-    <button onclick="document.getElementById('endorsements').scrollIntoView()">Endorsements</button>
-    <button onclick="document.getElementById('vote').scrollIntoView()">Vote</button>
-    <button class="give" onclick="window.open('https://secure.actblue.com/donate/nancy-for-az-3','_blank','noopener')">Donate</button>
+    <div class="wordmark"><a href="#top">Nancy <span>Gutierrez</span></a></div>
+    <a href="#record">Record</a>
+    <a href="#issues">Issues</a>
+    <a href="#endorsements">Endorsements</a>
+    <a href="#vote">Vote</a>
+    <a class="give" href="https://secure.actblue.com/donate/nancy-for-az-3" target="_blank" rel="noopener">Donate</a>
   </div>
 </nav>
 
-<div class="hero">
+<main id="main">
+
+<div class="hero" id="top">
   <div class="wrap">
-    <div class="eyebrow">Arizona House &middot; Legislative District 18</div>
+    <p class="eyebrow">Arizona House &middot; Legislative District 18</p>
     <h1>Nancy Gutierrez</h1>
     <p class="msg">A teacher&rsquo;s voice for Arizona</p>
     <div class="asks">
-      <button class="primary" onclick="window.open('https://secure.actblue.com/donate/nancy-for-az-3','_blank','noopener')">Donate</button>
-      <button onclick="window.open('https://my.arizona.vote/','_blank','noopener')">Check your registration</button>
-      <button onclick="window.open('https://servicearizona.com/VoterRegistration/selectLanguage','_blank','noopener')">Register to vote</button>
+      <a class="primary" href="https://secure.actblue.com/donate/nancy-for-az-3" target="_blank" rel="noopener">Donate</a>
+      <a href="https://my.arizona.vote/" target="_blank" rel="noopener">Check your registration</a>
+      <a href="https://servicearizona.com/VoterRegistration/selectLanguage" target="_blank" rel="noopener">Register to vote</a>
     </div>
   </div>
 </div>
@@ -158,15 +168,15 @@
 <div class="quoteband">
   <div class="wrap">
     <blockquote>We need teachers in the Legislature to let current lawmakers understand what is really happening in schools. I am qualified to be this voice.</blockquote>
-    <div class="attrib">Nancy Gutierrez, Assistant Minority Leader, Arizona House</div>
+    <p class="attrib">Nancy Gutierrez, Assistant Minority Leader, Arizona House</p>
   </div>
 </div>
 
-<section class="wrap">
+<section class="wrap" aria-labelledby="bio-h">
   <div class="split">
     <div>
       <p class="sechead">Who she is</p>
-      <h2>Thirty years in Arizona classrooms.</h2>
+      <h2 id="bio-h">Thirty years in Arizona classrooms.</h2>
       <p>Nancy attended Arizona public schools from kindergarten through college at NAU, where she earned a degree in elementary education with an emphasis in math. She has held an Arizona teaching credential since 1994 and taught in Paradise Valley, Sierra Vista, and at Tucson High from 2013 to 2025, where she served five years as Physical Education Department Chair.</p>
       <p>She lives in Tucson with her husband Andy. Their daughters Megan and Macie went through Arizona public schools their whole lives. She is a proud union member, a former president of Tucson NOW, and a Red Cross volunteer coordinator during the years her family was stationed at Fort Drum.</p>
       <p>She was elected to the Arizona House in 2022 and now serves as Assistant Minority Leader, the number two Democrat in the chamber.</p>
@@ -178,11 +188,11 @@
   </div>
 </section>
 
-<section class="wrap" id="record">
+<section class="wrap" id="record" aria-labelledby="record-h">
   <p class="sechead">The record</p>
-  <h2 class="narrow">Rep. Nancy Gutierrez has delivered:</h2>
+  <h2 class="narrow" id="record-h">Rep. Nancy Gutierrez has delivered:</h2>
   <ul class="record">
-<li>
+    <li>
       <div class="when">Leadership</div>
       <div>
         <div class="what">Assistant Minority Leader, Arizona House of Representatives</div>
@@ -194,7 +204,7 @@
       <div>
         <div class="what">$122 million to keep disability services running</div>
         <div class="note">Nancy worked with DDD families and across the aisle with Republican Rep. Julie Willoughby on the compromise that funded the Division of Developmental Disabilities through the end of the fiscal year, days before the money ran out.</div>
-        <button class="src" onclick="window.open('https://azmirror.com/briefs/ddd-community-celebrates-the-women-who-fought-for-vital-funding-bill/','_blank','noopener')" aria-label="Read the Arizona Mirror coverage of the DDD funding bill, opens in a new tab">Arizona Mirror, April 30, 2025</button>
+        <a class="src" href="https://azmirror.com/briefs/ddd-community-celebrates-the-women-who-fought-for-vital-funding-bill/" target="_blank" rel="noopener">Arizona Mirror, April 30, 2025</a>
       </div>
     </li>
     <li>
@@ -232,7 +242,7 @@
     <div class="honor">
       <div class="what">Hunt&ndash;Kean Leadership Fellow</div>
       <div class="note">A bipartisan education policy fellowship for state leaders, run by the Hunt Institute.</div>
-      <button class="src" onclick="window.open('https://hunt-institute.org/programs/hunt-kean-leadership-fellows-program/','_blank','noopener')" aria-label="About the Hunt-Kean Leadership Fellows Program, opens in a new tab">Hunt Institute</button>
+      <a class="src" href="https://hunt-institute.org/programs/hunt-kean-leadership-fellows-program/" target="_blank" rel="noopener">Hunt Institute</a>
     </div>
     <div class="honor">
       <div class="what">Public Servant of the Year</div>
@@ -247,9 +257,9 @@
   <hr class="rule">
 </section>
 
-<section class="wrap" id="issues">
+<section class="wrap" id="issues" aria-labelledby="issues-h">
   <p class="sechead">What she is fighting for</p>
-  <h2 class="narrow">Four things that will decide the next decade in Arizona.</h2>
+  <h2 class="narrow" id="issues-h">Four things that will decide the next decade in Arizona.</h2>
   <div class="issues">
     <div class="issue">
       <h3>Public education is in crisis</h3>
@@ -274,9 +284,9 @@
   </div>
 </section>
 
-<section class="wrap" id="endorsements">
+<section class="wrap" id="endorsements" aria-labelledby="endorse-h">
   <p class="sechead">Endorsements</p>
-  <h2 class="narrow">Nancy is proud to be endorsed by:</h2>
+  <h2 class="narrow" id="endorse-h">Nancy is proud to be endorsed by:</h2>
   <ul class="endorse">
     <!-- 2026 endorsements as provided by Rep. Gutierrez, August 2026. Names are verbatim
          and have not been expanded or verified against each organization's legal name.
@@ -301,17 +311,19 @@
   </ul>
 </section>
 
-<div class="vote" id="vote">
+<section class="vote" id="vote" aria-labelledby="vote-h">
   <div class="wrap">
     <p class="sechead" style="color:#F5D2CE;">Before anything else</p>
-    <h2>Make sure you can vote.</h2>
+    <h2 id="vote-h">Make sure you can vote.</h2>
     <p>Registrations get cancelled for reasons that have nothing to do with you. Checking takes about thirty seconds and it is the single most useful thing you can do today.</p>
     <div class="row">
-      <button onclick="window.open('https://my.arizona.vote/','_blank','noopener')">Check my registration</button>
-      <button onclick="window.open('https://servicearizona.com/VoterRegistration/selectLanguage','_blank','noopener')">Register to vote</button>
+      <a href="https://my.arizona.vote/" target="_blank" rel="noopener">Check my registration</a>
+      <a href="https://servicearizona.com/VoterRegistration/selectLanguage" target="_blank" rel="noopener">Register to vote</a>
     </div>
   </div>
-</div>
+</section>
+
+</main>
 
 <footer>
   <div class="wrap">
@@ -319,20 +331,20 @@
       <div>
         <h2 style="font-size:1.9rem;margin-bottom:.9rem;">Get in touch.</h2>
         <p>PO Box 35612, Tucson, AZ 85740</p>
-        <p>(520) 222-9969</p>
-        <p>nancyforaz@gmail.com</p>
+        <p><a href="tel:+15202229969">(520) 222-9969</a></p>
+        <p><a href="mailto:nancyforaz@gmail.com">nancyforaz@gmail.com</a></p>
         <div class="social">
-          <button onclick="window.open('https://www.instagram.com/nancyforaz/','_blank','noopener')">Instagram</button>
-          <button onclick="window.open('https://www.facebook.com/nancyforaz','_blank','noopener')">Facebook</button>
-          <button onclick="window.open('https://twitter.com/nancygforAZ','_blank','noopener')">Twitter</button>
-          <button onclick="window.open('https://www.youtube.com/channel/UC-UsPKEvRo90yjInyvIv1fQ','_blank','noopener')">YouTube</button>
+          <a href="https://www.instagram.com/nancyforaz/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/nancyforaz" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://twitter.com/nancygforAZ" target="_blank" rel="noopener">Twitter</a>
+          <a href="https://www.youtube.com/channel/UC-UsPKEvRo90yjInyvIv1fQ" target="_blank" rel="noopener">YouTube</a>
         </div>
       </div>
       <div>
         <p class="sechead" style="color:#A9B6AF;">News from the House</p>
         <p style="margin-bottom:1rem;">Nancy sends a newsletter from the Legislature covering what is moving, what is stuck, and what it means for Tucson.</p>
         <div class="social">
-          <button onclick="window.open('https://mailchi.mp/a193ce05c8b5/votingbeginssoon','_blank','noopener')">Read the latest</button>
+          <a href="https://mailchi.mp/a193ce05c8b5/votingbeginssoon" target="_blank" rel="noopener">Read the latest</a>
         </div>
       </div>
     </div>
