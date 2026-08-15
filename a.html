@@ -82,6 +82,11 @@
         display:inline-block;text-align:left;}
   .record .src:hover{color:var(--ink);}
 
+  .honors{margin-top:3.2rem;display:grid;gap:1.8rem;}
+  @media(min-width:44rem){.honors{grid-template-columns:repeat(3,1fr);gap:2.5rem;}}
+  .honor .what{font-family:var(--display);font-size:1.1rem;line-height:1.3;margin-bottom:.35rem;}
+  .honor .note{font-size:.93rem;color:var(--soft);line-height:1.55;}
+
   .issues{display:grid;gap:2.5rem;}
   @media(min-width:52rem){.issues{grid-template-columns:1fr 1fr;gap:3rem 3.5rem;}}
   .issue h3{font-family:var(--display);font-weight:400;font-size:1.5rem;line-height:1.2;margin:0 0 .6rem;}
@@ -219,6 +224,23 @@
       </div>
     </li>
   </ul>
+
+  <p class="sechead" style="margin-top:3.2rem;">Recognition</p>
+  <div class="honors">
+    <div class="honor">
+      <div class="what">Hunt&ndash;Kean Leadership Fellow</div>
+      <div class="note">A bipartisan education policy fellowship for state leaders, run by the Hunt Institute.</div>
+      <button class="src" onclick="window.open('https://hunt-institute.org/programs/hunt-kean-leadership-fellows-program/','_blank','noopener')" aria-label="About the Hunt-Kean Leadership Fellows Program, opens in a new tab">Hunt Institute</button>
+    </div>
+    <div class="honor">
+      <div class="what">Public Servant of the Year</div>
+      <div class="note">Named by the Southern Arizona Education Council.</div>
+    </div>
+    <div class="honor">
+      <div class="what">Elected Leaders to Protect America</div>
+      <div class="note">Completed the leadership program for elected officials working on climate and security.</div>
+    </div>
+  </div>
 </section>
 
 <section class="wrap" id="issues">
