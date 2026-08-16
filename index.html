@@ -88,7 +88,7 @@
   .src{font-size:.9rem;font-weight:700;color:var(--red);text-decoration:underline;text-underline-offset:2px;
         margin-top:.5rem;display:inline-block;}
   .src:hover{color:var(--ink);}
-  .allbills{margin-top:1.4rem;}
+  .src.flush{margin-top:0;font-size:.98rem;}
 
   .honors{margin-top:var(--gap);display:grid;gap:1.8rem;}
   @media(min-width:44rem){.honors{grid-template-columns:repeat(3,1fr);gap:2.5rem;}}
@@ -228,10 +228,14 @@
         <div class="note">Brought forward in partnership with Pima County officials, so cities can set their own rules.</div>
       </div>
     </li>
+    <!-- Session-scoped URL: the legislature and session parameters will need updating each session. -->
+    <li>
+      <div class="when">Bills sponsored</div>
+      <div>
+        <a class="src flush" href="https://www.azleg.gov/House/House-member/?legislature=57&amp;session=130&amp;legislator=2310" target="_blank" rel="noopener">Every bill Nancy has sponsored or cosponsored &middot; azleg.gov</a>
+      </div>
+    </li>
   </ul>
-
-  <!-- Session-scoped URL: the legislature and session parameters will need updating each session. -->
-  <p class="allbills"><a class="src" href="https://www.azleg.gov/House/House-member/?legislature=57&amp;session=130&amp;legislator=2310" target="_blank" rel="noopener">Every bill Nancy has sponsored or cosponsored &middot; azleg.gov</a></p>
 
   <p class="sechead" style="margin-top:var(--gap);">Recognition</p>
   <div class="honors">
