@@ -52,6 +52,10 @@
         letter-spacing:-.02em;margin:.7rem 0 .5rem;}
   .hero .msg{font-family:var(--display);font-style:italic;font-size:clamp(1.3rem,3.4vw,2rem);
         color:var(--red);line-height:1.25;margin:0 0 1.8rem;max-width:30rem;}
+  .news{border-left:4px solid var(--red);padding:.15rem 0 .15rem 1.1rem;margin:0 0 calc(var(--gap) * 1.7);max-width:40rem;}
+  .news .newshead{font-family:var(--display);font-weight:600;font-size:clamp(1.5rem,4.2vw,2.3rem);line-height:1.15;
+        letter-spacing:-.01em;margin:0 0 .45rem;}
+  .news .newssub{margin:0;font-size:1.05rem;line-height:1.5;color:var(--soft);}
   .asks{display:flex;gap:.6rem;flex-wrap:wrap;}
   .asks a{display:inline-block;font-weight:700;font-size:.95rem;padding:.7rem 1.3rem;border-radius:2px;
         border:1.5px solid var(--ink);background:transparent;color:var(--ink);text-decoration:none;}
@@ -152,6 +156,11 @@
 
 <div class="hero" id="top">
   <div class="wrap">
+    <!-- Post-election announcement, November 2026. Remove or revise when no longer news. -->
+    <div class="news">
+      <p class="newshead">A teacher will lead the House majority.</p>
+      <p class="newssub">Congratulations to Nancy Gutierrez, the first Democratic woman elected Arizona House Majority Leader.</p>
+    </div>
     <p class="eyebrow">Arizona House &middot; Legislative District 18</p>
     <h1>Nancy Gutierrez</h1>
     <p class="msg">A teacher&rsquo;s voice for Arizona</p>
@@ -166,7 +175,8 @@
 <div class="quoteband">
   <div class="wrap">
     <blockquote>We need teachers in the Legislature to let current lawmakers understand what is really happening in schools. I am qualified to be this voice.</blockquote>
-    <p class="attrib">Nancy Gutierrez, Assistant Minority Leader, Arizona House</p>
+    <!-- Drop "-elect" when the 2027 session convenes in January. -->
+    <p class="attrib">Nancy Gutierrez, Arizona House Majority Leader-elect</p>
   </div>
 </div>
 
